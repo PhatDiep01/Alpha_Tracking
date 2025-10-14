@@ -1,0 +1,48 @@
+  /* Tùy chỉnh thanh cuộn */
+        :root {
+            --scrollbar-track-bg: #f1f5f9;
+            --scrollbar-thumb-bg: #94a3b8;
+            --scrollbar-thumb-hover-bg: #64748b;
+        }
+
+        html.dark {
+            --scrollbar-track-bg: #1a202c;
+            --scrollbar-thumb-bg: #4a5568;
+            --scrollbar-thumb-hover-bg: #718096;
+        }
+
+        ::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: var(--scrollbar-track-bg);
+        }
+        ::-webkit-scrollbar-thumb {
+            background: var(--scrollbar-thumb-bg);
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: var(--scrollbar-thumb-hover-bg);
+        }
+
+        /* Style cho các ngày trong lịch */
+        .calendar-day {
+            transition: all 0.2s ease-in-out;
+        }
+        .calendar-day:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 10px rgba(99, 102, 241, 0.3);
+        }
+        /* Hiệu ứng mờ dần cho popup */
+        #entryModal {
+            transition: opacity 0.3s ease-in-out;
+        }
+        .modal-content {
+            transition: transform 0.3s ease-in-out;
+        }
+        .active-chart-btn {
+            background-color: #6d28d9;
+            color: white;
+            font-weight: 600;
+        }
